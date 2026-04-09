@@ -1,24 +1,17 @@
 [build]
 nixpacks = true
 
-[deploy]
-numReplicas = 1
-
 [nixpacks]
 pkgs = [
-  "ffmpeg",
-  "libgcc",
-  "libglib",
   "libglvnd",
   "libglvnd.dev",
-  "libsm6",
-  "libxrender",
-  "libxext",
-  "libstdc++",
+  "libgcc",
+  "libstdcxx",
+  "libx11",
   "libxcb",
-  "mesa",
-  "mesa-dev"
+  "libxext",
+  "libxrender",
+  "libsm",
+  "zlib",
+  "ffmpeg"
 ]
-
-[variables]
-PORT = "8080"
