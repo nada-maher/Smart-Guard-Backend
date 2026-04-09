@@ -11,8 +11,13 @@ bcrypt>=4.0.0
 PyJWT>=2.8.0
 httpx>=0.25.0
 requests>=2.31.0
-opencv-python>=4.8.0
-numpy>=1.24.0
-tensorflow
-supabase
 
+# IMPORTANT: use headless version for Railway
+opencv-python-headless>=4.8.0
+
+numpy>=1.24.0
+
+# TensorFlow CPU version (lighter & works on Railway)
+tensorflow-cpu==2.14.0
+
+supabase
